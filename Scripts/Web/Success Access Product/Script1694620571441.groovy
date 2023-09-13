@@ -17,15 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.click(findTestObject('Homepage/button_product'))
 
-WebUI.navigateToUrl(GlobalVariable.baseUrl)
-
-WebUI.setText(findTestObject('Login/input_email'), '130923test2@gmail.com')
-
-WebUI.setText(findTestObject('Login/input_password'), 'password')
-
-WebUI.click(findTestObject('Login/button_login'))
-
-WebUI.verifyElementText(findTestObject('Homepage/txt_namaToko'), 'testing')
+WebUI.verifyElementVisible(findTestObject('Produk/title_produk'))
 
