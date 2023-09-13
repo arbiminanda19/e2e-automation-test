@@ -31,9 +31,9 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Register/input_password
 
 WebUI.click(findTestObject('Object Repository/Register/button_daftar'))
 
-WebUI.click(findTestObject('Object Repository/Register/div_Toko berhasil didaftarkananda dapat men_b3a8bd'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/Register/div_Toko berhasil didaftarkananda dapat men_b3a8bd'))
 
-WebUI.click(findTestObject('Object Repository/Register/div_Toko berhasil didaftarkan'))
+WebUI.verifyElementPresent(findTestObject('Object Repository/Register/div_Toko berhasil didaftarkan'), 0)
 
-WebUI.click(findTestObject('Object Repository/Register/div_anda dapat menggunakan login sekarang'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/Register/div_anda dapat menggunakan login sekarang'))
 
