@@ -25,7 +25,7 @@ WebUI.click(findTestObject('Object Repository/Register/a_ingin mencoba, daftar')
 
 WebUI.setText(findTestObject('Object Repository/Register/input_nama toko_name'), nama_toko)
 
-WebUI.setText(findTestObject('Object Repository/Register/input_email_email'), '130923test@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Register/input_email_email'), '130923test3@gmail.com')
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Register/input_password_password'), 'SOFEPrXv8/UJM0rtCZFNLQ==')
 
