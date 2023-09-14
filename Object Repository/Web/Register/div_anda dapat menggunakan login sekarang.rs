@@ -6,12 +6,12 @@
    <elementGuidId>69c42222-0a39-48b1-8ec7-025ede2694bf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.chakra-alert__desc.css-zycdy9</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='1']/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.chakra-alert__desc.css-zycdy9</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

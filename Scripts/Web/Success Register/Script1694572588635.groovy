@@ -24,21 +24,21 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.baseUrl)
 
-WebUI.click(findTestObject('Object Repository/Register/a_ingin mencoba, daftar'))
+WebUI.click(findTestObject('Object Repository/Web/Register/a_ingin mencoba, daftar'))
 
 nama_toko = faker.company().name()
 
-WebUI.setText(findTestObject('Object Repository/Register/input_nama toko_name'), nama_toko)
+WebUI.setText(findTestObject('Object Repository/Web/Register/input_nama toko_name'), nama_toko)
 
-WebUI.setText(findTestObject('Object Repository/Register/input_email_email'), faker.internet().emailAddress())
+WebUI.setText(findTestObject('Object Repository/Web/Register/input_email_email'), faker.internet().emailAddress())
 
-WebUI.setEncryptedText(findTestObject('Object Repository/Register/input_password_password'), 'SOFEPrXv8/UJM0rtCZFNLQ==')
+WebUI.setEncryptedText(findTestObject('Object Repository/Web/Register/input_password_password'), 'SOFEPrXv8/UJM0rtCZFNLQ==')
 
-WebUI.click(findTestObject('Object Repository/Register/button_daftar'))
+WebUI.click(findTestObject('Object Repository/Web/Register/button_daftar'))
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Register/div_Toko berhasil didaftarkananda dapat men_b3a8bd'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/Web/Register/div_Toko berhasil didaftarkananda dapat men_b3a8bd'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Register/div_Toko berhasil didaftarkan'), 0)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Web/Register/div_Toko berhasil didaftarkan'), 0)
 
-WebUI.verifyElementVisible(findTestObject('Object Repository/Register/div_anda dapat menggunakan login sekarang'))
+WebUI.verifyElementVisible(findTestObject('Object Repository/Web/Register/div_anda dapat menggunakan login sekarang'))
 

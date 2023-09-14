@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>title_produk</name>
+   <name>button_product</name>
    <tag></tag>
-   <elementGuidId>4cb1064a-9720-4052-9211-838a86586eed</elementGuidId>
+   <elementGuidId>8930be13-dfe6-4ee5-a554-84906876aedd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@href='/products'][contains(text(),'/')]</value>
+         <value>//a[@href='/products']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

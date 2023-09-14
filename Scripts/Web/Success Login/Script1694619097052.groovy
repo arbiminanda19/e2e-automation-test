@@ -21,11 +21,11 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.baseUrl)
 
-WebUI.setText(findTestObject('Login/input_email'), "130923test2@gmail.com")
+WebUI.setText(findTestObject('Web/Login/input_email'), "130923test2@gmail.com")
 
-WebUI.setText(findTestObject('Login/input_password'), "password")
+WebUI.setText(findTestObject('Web/Login/input_password'), "password")
 
-WebUI.click(findTestObject('Login/button_login'))
+WebUI.click(findTestObject('Web/Login/button_login'))
 
-WebUI.verifyElementText(findTestObject('Homepage/txt_namaToko'), 'testing')
+WebUI.verifyElementText(findTestObject('Web/Homepage/txt_namaToko'), 'testing')
 

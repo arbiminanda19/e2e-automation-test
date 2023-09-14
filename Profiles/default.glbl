@@ -9,4 +9,9 @@
       <initValue>'https://kasirdemo.belajarqa.com/'</initValue>
       <name>baseUrl</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://kasir-api.belajarqa.com'</initValue>
+      <name>baseUrlAPI</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

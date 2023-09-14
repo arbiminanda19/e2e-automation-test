@@ -17,25 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.navigateToUrl(GlobalVariable.baseUrl)
-
-WebUI.setText(findTestObject('Web/Login/input_email'), email)
-
-WebUI.setText(findTestObject('Web/Login/input_password'), password)
-
-WebUI.click(findTestObject('Web/Login/button_login'))
-
-if (status == "failed") {
-	
-	WebUI.verifyElementVisible(findTestObject('Web/Login/alert_wrongCreds'))
-	
-} else {
-	
-	WebUI.verifyElementText(findTestObject('Web/Homepage/txt_namaToko'), 'testing')
-	
-}
-
-
+WS.sendRequest(findTestObject('test', [('email') : '130923test2@gmail.com', ('password') : 'password']))
 

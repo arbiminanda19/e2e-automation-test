@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Homepage/button_product'))
+WebUI.click(findTestObject('Web/Homepage/button_product'))
 
-WebUI.verifyElementVisible(findTestObject('Produk/title_produk'))
+WebUI.verifyElementVisible(findTestObject('Web/Produk/title_produk'))
 

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>button_login</name>
+   <name>input_password</name>
    <tag></tag>
-   <elementGuidId>ee3dc6d0-0c2e-4888-a9d6-9fb21cf34a45</elementGuidId>
+   <elementGuidId>a45ab043-5b25-4e17-919d-30318a50339c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@type='submit']</value>
+         <value>//input[@type='password']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

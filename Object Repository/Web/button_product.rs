@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_password</name>
+   <name>button_product</name>
    <tag></tag>
-   <elementGuidId>a45ab043-5b25-4e17-919d-30318a50339c</elementGuidId>
+   <elementGuidId>8930be13-dfe6-4ee5-a554-84906876aedd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@type='password']</value>
+         <value>//a[@href='/products']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

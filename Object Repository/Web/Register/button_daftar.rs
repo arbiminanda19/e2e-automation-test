@@ -6,12 +6,12 @@
    <elementGuidId>4e0abfbf-c330-4645-b4b6-c983e85afbd5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>button.chakra-button.css-1n8i4of</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//button[@type='submit']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.chakra-button.css-1n8i4of</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

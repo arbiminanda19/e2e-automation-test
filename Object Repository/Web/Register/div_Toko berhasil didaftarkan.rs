@@ -6,12 +6,12 @@
    <elementGuidId>31f6dc6e-bb13-4e3d-9f42-84c9a38f8b09</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#toast-1-title</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='toast-1-title']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#toast-1-title</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
