@@ -16,6 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.github.javafaker.Faker as Faker
+
+def faker = new Faker()
 
 WebUI.openBrowser('')
 
@@ -23,9 +26,11 @@ WebUI.navigateToUrl(GlobalVariable.baseUrl)
 
 WebUI.click(findTestObject('Object Repository/Register/a_ingin mencoba, daftar'))
 
+nama_toko = faker.company().name()
+
 WebUI.setText(findTestObject('Object Repository/Register/input_nama toko_name'), nama_toko)
 
-WebUI.setText(findTestObject('Object Repository/Register/input_email_email'), '130923test3@gmail.com')
+WebUI.setText(findTestObject('Object Repository/Register/input_email_email'), faker.internet().emailAddress())
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Register/input_password_password'), 'SOFEPrXv8/UJM0rtCZFNLQ==')
 

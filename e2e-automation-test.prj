@@ -6,6 +6,7 @@
    <UUID>a1b35188-eacc-4239-8d39-945f51cba7b9</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/flp-9-muhammadminanda/Katalon Studio/e2e-automation-test/e2e-automation-test.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

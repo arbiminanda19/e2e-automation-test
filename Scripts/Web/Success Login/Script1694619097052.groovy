@@ -21,9 +21,9 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(GlobalVariable.baseUrl)
 
-WebUI.setText(findTestObject('Login/input_email'), '130923test2@gmail.com')
+WebUI.setText(findTestObject('Login/input_email'), "130923test2@gmail.com")
 
-WebUI.setText(findTestObject('Login/input_password'), 'password')
+WebUI.setText(findTestObject('Login/input_password'), "password")
 
 WebUI.click(findTestObject('Login/button_login'))
 
