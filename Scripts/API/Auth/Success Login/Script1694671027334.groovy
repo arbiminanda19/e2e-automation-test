@@ -22,8 +22,7 @@ def jsonSlurper = new JsonSlurper()
 
 email = '130923test2@gmail.com'
 
-response = WS.sendRequest(findTestObject('API/Auth/Login', [('BASE_URL') : GlobalVariable.baseUrlAPI, ('email') : email
-            , ('password') : 'password']))
+response = WS.sendRequest(findTestObject('API/Auth/Login', [('BASE_URL') : GlobalVariable.baseUrlAPI, ('email') : email, ('password') : 'password']))
 
 parsedResponse = jsonSlurper.parseText(response.getResponseBodyContent())
 
@@ -33,6 +32,9 @@ WS.verifyElementPropertyValue(response, 'status', 'success')
 
 WS.verifyElementPropertyValue(response, 'data.user.email', email)
 
+CustomKeywords.'verifyJsonSchema.login.validateSuccessLoginSchema'(response)
+
 GlobalVariable.token = parsedResponse.data.accessToken
 
 GlobalVariable.userId = parsedResponse.data.user.id
+

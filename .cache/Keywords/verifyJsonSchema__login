@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "DE9E81B78822FB84EAB1ECCCF2A43051",
+  "keywordClasses": [
+    {
+      "name": "verifyJsonSchema.login",
+      "keywordMethods": [
+        {
+          "name": "validateSuccessLoginSchema",
+          "parameters": [
+            {
+              "name": "response",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
