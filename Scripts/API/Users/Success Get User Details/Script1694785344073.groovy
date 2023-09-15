@@ -18,21 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-def jsonSlurper = new JsonSlurper()
+response = WS.sendRequest(findTestObject('API/Users/Get User Details', [('BASE_URL') : GlobalVariable.baseUrlAPI, ('userId') : GlobalVariable.userId
+            , ('token') : GlobalVariable.token]))
 
-email = '130923test2@gmail.com'
-
-response = WS.sendRequest(findTestObject('API/Auth/Login', [('BASE_URL') : GlobalVariable.baseUrlAPI, ('email') : email
-            , ('password') : 'password']))
-
-parsedResponse = jsonSlurper.parseText(response.getResponseBodyContent())
-
-WS.verifyResponseStatusCode(response, 201)
-
-WS.verifyElementPropertyValue(response, 'status', 'success')
-
-WS.verifyElementPropertyValue(response, 'data.user.email', email)
-
-GlobalVariable.token = parsedResponse.data.accessToken
-
-GlobalVariable.userId = parsedResponse.data.user.id
+WS.verifyResponseStatusCode(response, 200)
