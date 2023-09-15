@@ -17,6 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WS.sendRequest(findTestObject('API/Auth/Login', [('BASE_URL') : GlobalVariable.baseUrlAPI, ('email') : '130923test2@gmail.com'
+email = '130923test2@gmail.com'
+
+response = WS.sendRequest(findTestObject('API/Auth/Login', [('BASE_URL') : GlobalVariable.baseUrlAPI, ('email') : email
             , ('password') : 'password']))
 
+WS.verifyResponseStatusCode(response, 201)
+
+WS.verifyElementPropertyValue(response, 'status', 'success')
+
+WS.verifyElementPropertyValue(response, 'data.user.email', email)
