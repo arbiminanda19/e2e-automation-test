@@ -16,14 +16,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import groovy.json.JsonSlurper as JsonSlurper
+
+def jsonSlurper = new JsonSlurper()
 
 email = '130923test2@gmail.com'
 
 response = WS.sendRequest(findTestObject('API/Auth/Login', [('BASE_URL') : GlobalVariable.baseUrlAPI, ('email') : email
             , ('password') : 'password']))
 
+parsedResponse = jsonSlurper.parseText(response.getResponseBodyContent())
+
 WS.verifyResponseStatusCode(response, 201)
 
 WS.verifyElementPropertyValue(response, 'status', 'success')
 
 WS.verifyElementPropertyValue(response, 'data.user.email', email)
+
+GlobalVariable.token = parsedResponse.data.accessToken
